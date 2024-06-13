@@ -5,11 +5,20 @@
 	"version": "0.1.0",
 	"title": "Scrolling Text",
 	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"icon": "editor-bold",
+	"description": "A stylable page wide scrolling text",
 	"example": {},
 	"supports": {
 		"html": false
+	},
+	"attributes": {
+		"text": {
+			"type": "string"
+		},
+		"speed": {
+			"type": "string",
+			"default": "1"
+		}
 	},
 	"textdomain": "scrolling-text",
 	"editorScript": "file:./index.js",

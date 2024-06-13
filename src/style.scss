@@ -4,9 +4,17 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+@import "swiper/css";
 
-.wp-block-create-block-scrolling-text {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.swiper-slide {
+	width: fit-content !important;
+}
+
+.swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
+.swiper-text {
+	font-size: 80px;
+	text-wrap: nowrap;
 }

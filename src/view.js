@@ -20,6 +20,16 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
 
-/* eslint-disable no-console */
-console.log( 'Hello World! (from create-block-scrolling-text block)' );
-/* eslint-enable no-console */
+import Swiper from "swiper/bundle";
+
+var swiper = new Swiper(".scrollingText", {
+	loop: true,
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: false,
+	},
+	slidesPerView: "auto",
+	centeredSlides: true,
+	spaceBetween: 40,
+	speed: 10000 / sliderSpeed,
+});

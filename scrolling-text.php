@@ -1,11 +1,12 @@
 <?php
+
 /**
  * Plugin Name:       Scrolling Text
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       A Gutenberg block with page wide scrolling text.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Steve Jonk
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       scrolling-text
@@ -13,7 +14,7 @@
  * @package CreateBlock
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
@@ -24,7 +25,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_scrolling_text_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function create_block_scrolling_text_block_init()
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'create_block_scrolling_text_block_init' );
+add_action('init', 'create_block_scrolling_text_block_init');
